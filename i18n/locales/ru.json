@@ -1,0 +1,64 @@
+{
+  "header": {
+    "about": "О нас",
+    "offers": "Предложения",
+    "contacts": "Контакты",
+    "phone": "Позвонить",
+    "cta": "Записаться"
+  },
+  "hero": {
+    "title": "Эксклюзивные предложения по недвижимости в Дубае от Dakheem"
+  },
+  "about": {
+    "section_title": "О нас",
+    "heading": "Ваш ключ к возможностям в сфере недвижимости Дубая",
+    "text": "Являясь одним из ведущих агентств недвижимости города, мы помогаем клиентам со всего мира находить первоклассные объекты в самом сердце Дубая. На роуд-шоу Dakheem у вас будет возможность учиться, общаться и инвестировать в одни из самых престижных локаций Дубая."
+  },
+  "offers": {
+    "section_title": "Предложения",
+    "heading": "Присоединяйтесь к роуд-шоу Dakheem, полному непревзойденных возможностей!",
+    "card1_title": "Индивидуальный подбор",
+    "card2_title": "Персональные предложения",
+    "card3_title": "Консультации экспертов",
+    "card4_title": "Стратегии покупки и продажи"
+  },
+  "attention": {
+    "section_title": "Внимание",
+    "text": "Клиенты, забронировавшие участие во время роуд-шоу, получат поездку в Дубай на двоих и ваучер на сумму 8000 дирхамов!"
+  },
+  "event": {
+    "section_title": "Время до события",
+    "days": "Дней",
+    "hours": "Часов",
+    "minutes": "Минут",
+    "seconds": "Секунд"
+  },
+  "location": {
+    "section_title": "Местоположение",
+    "heading": "Эксклюзивные предложения по недвижимости в Дубае от Dakheem"
+  },
+  "footer": {
+    "heading": "Хотите первым узнавать о лучших предложениях недвижимости в Дубае?",
+    "cta": "Да, хочу!"
+  },
+  "slider": {
+    "wynwood_featured": "Tanlangan mulk",
+    "wynwood_title": "WYNWOOD IMTIAZ'dan",
+    "wynwood_desc": "Dubay orollarining nufuzli sohilida joylashgan me'moriy maskan - Imtiaz'dan Wynwood Residence'ga xush kelibsiz.",
+    "wynwood_feat1": "TO'LIQ<br>JIHOZLANGAN",
+    "wynwood_feat2": "QULAY<br>JOYLASHUV",
+    "wynwood_feat3": "5 DAQIQA<br>PLYAJGACHA",
+    "marina_featured": "Yangi taklif",
+    "marina_title": "MARINA VISTAS",
+    "marina_desc": "Arab ko'rfazi va Dubay Marina osmono'par binolarining ajoyib manzaralari bilan hashamatli hayotning yangi darajasini kashf eting.",
+    "marina_feat1": "MARINAGA<br>CHIQISH",
+    "marina_feat2": "CHEKSIZ<br>BASSEYN",
+    "marina_feat3": "PANORAMIK<br>MANZARALAR",
+    "palace_featured": "Eksklyuziv taklif",
+    "palace_title": "PALACE RESIDENCES",
+    "palace_desc": "Yuqori darajadagi turmush tarzi uchun ko'plab zamonaviy qulayliklarga ega bo'lgan qirg'oq bo'yidagi zamonaviy turar-joy binosi.",
+    "palace_feat1": "AVTO<br>TURARGOX",
+    "palace_feat2": "HASHAMATLI<br>SPA",
+    "palace_feat3": "KONSEJER<br>24/7"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "header": {
+    "about": "Biz haqimizda",
+    "offers": "Takliflar",
+    "contacts": "Kontaktlar",
+    "phone": "Qo'ng'iroq qilish",
+    "cta": "Ro'yxatdan o'tish"
+  },
+  "hero": {
+    "title": "Dakheem'dan Dubaydagi eksklyuziv ko'chmas mulk takliflari"
+  },
+  "about": {
+    "section_title": "Biz haqimizda",
+    "heading": "Dubay ko'chmas mulk imkoniyatlarini ochish uchun sizning kalitingiz",
+    "text": "Shaharning yetakchi ko'chmas mulk agentliklaridan biri sifatida biz butun dunyodagi mijozlarga Dubayning markazida joylashgan eng yaxshi mulklarni topishga yordam beramiz. Dakheem Roadshow'da siz Dubayning eng nufuzli manzillaridan birida o'rganish, aloqalar o'rnatish va sarmoya kiritish imkoniyatiga ega bo'lasiz."
+  },
+  "offers": {
+    "section_title": "Takliflar",
+    "heading": "Betakror imkoniyatlarga to'la Dakheem Roadshow'ga qo'shiling!",
+    "card1_title": "Individual tanlov",
+    "card2_title": "Shaxsiy takliflar",
+    "card3_title": "Ekspert maslahatlari",
+    "card4_title": "Sotib olish va sotish strategiyalari"
+  },
+  "attention": {
+    "section_title": "Diqqat",
+    "text": "Roadshow davomida ishtirok etishni bron qilgan mijozlar ikki kishilik Dubayga sayohat va 8000 AED qiymatidagi vaucherni qo'lga kiritadilar!"
+  },
+  "event": {
+    "section_title": "Tadbirgacha qolgan vaqt",
+    "days": "Kun",
+    "hours": "Soat",
+    "minutes": "Daqiqa",
+    "seconds": "Soniya"
+  },
+  "location": {
+    "section_title": "Joylashuv",
+    "heading": "Dakheem'dan Dubaydagi eksklyuziv ko'chmas mulk takliflari"
+  },
+  "footer": {
+    "heading": "Dubaydagi eng yaxshi ko'chmas mulk takliflari haqida birinchi bo'lib bilishni xohlaysizmi?",
+    "cta": "Ha, xohlayman!"
+  },
+  "slider": {
+    "wynwood_featured": "Tanlangan mulk",
+    "wynwood_title": "WYNWOOD IMTIAZ'dan",
+    "wynwood_desc": "Dubay orollarining nufuzli sohilida joylashgan me'moriy maskan - Imtiaz'dan Wynwood Residence'ga xush kelibsiz.",
+    "wynwood_feat1": "TO'LIQ<br>JIHOZLANGAN",
+    "wynwood_feat2": "QULAY<br>JOYLASHUV",
+    "wynwood_feat3": "5 DAQIQA<br>PLYAJGACHA",
+    "marina_featured": "Yangi taklif",
+    "marina_title": "MARINA VISTAS",
+    "marina_desc": "Arab ko'rfazi va Dubay Marina osmono'par binolarining ajoyib manzaralari bilan hashamatli hayotning yangi darajasini kashf eting.",
+    "marina_feat1": "MARINAGA<br>CHIQISH",
+    "marina_feat2": "CHEKSIZ<br>BASSEYN",
+    "marina_feat3": "PANORAMIK<br>MANZARALAR",
+    "palace_featured": "Eksklyuziv taklif",
+    "palace_title": "PALACE RESIDENCES",
+    "palace_desc": "Yuqori darajadagi turmush tarzi uchun ko'plab zamonaviy qulayliklarga ega bo'lgan qirg'oq bo'yidagi zamonaviy turar-joy binosi.",
+    "palace_feat1": "AVTO<br>TURARGOX",
+    "palace_feat2": "HASHAMATLI<br>SPA",
+    "palace_feat3": "KONSEJER<br>24/7"
+  }
+}

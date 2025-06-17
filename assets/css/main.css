@@ -1,0 +1,51 @@
+/* 1. Импорт шрифта Exo 2 */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /* 2. Переменные для СВЕТЛОЙ темы (по умолчанию) */
+    :root {
+        --background: #f8f8f8;      /* Светло-бежевый фон */
+        --foreground: #1a1a1a;      /* Почти чёрный текст */
+        --muted: #555555;          /* Серый для вторичного текста */
+        --border: #e5e5e5;          /* Очень светлая рамка */
+        --placeholder: #eeeeee;    /* Цвет для плейсхолдеров */
+        --primary: #1a1a1a;         /* Основной цвет для кнопок теперь - цвет текста */
+    }
+
+    /* 3. Переопределение переменных для ТЁМНОЙ темы */
+    .dark {
+        --background: #000000;      /* Чисто чёрный фон */
+        --foreground: #ffffff;      /* Чисто белый текст */
+        --muted: #b3b3b3;          /* Светло-серый для вторичного текста */
+        --border: #333333;          /* Тёмно-серые рамки */
+        --placeholder: #333333;    /* Цвет для плейсхолдеров */
+        --primary: #ffffff;         /* Основной цвет для кнопок в тёмной теме */
+    }
+
+    /* 4. Базовые стили для body */
+    body {
+        overflow-x: hidden;
+        background-color: var(--background);
+        color: var(--foreground);
+        font-family: 'Exo 2', sans-serif;
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        /* Добавляем плавный переход для смены темы */
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+}
+/* Вспомогательный класс-контейнер остается без изменений */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
