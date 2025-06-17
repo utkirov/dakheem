@@ -37,7 +37,7 @@ const offers = ref([
 <style scoped>
 .offers-section {
   padding: 96px 20px;
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .content-wrapper {
   display: grid;

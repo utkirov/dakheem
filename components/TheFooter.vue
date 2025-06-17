@@ -4,13 +4,23 @@
       <div class="footer-grid">
 
         <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="logo">DAKHEEM</h3>
+          <a href="/" class="logo-link">
+            <img :src="logoSrc" alt="DAKHEEM Logo" class="logo-image"/>
+          </a>
           <p class="description">{{ $t('footer.description') }}</p>
           <div class="social-links">
-            <a href="#" aria-label="Instagram" class="social-link"><Icon name="ph:instagram-logo-bold" /></a>
-            <a href="#" aria-label="Facebook" class="social-link"><Icon name="ph:facebook-logo-bold" /></a>
-            <a href="#" aria-label="LinkedIn" class="social-link"><Icon name="ph:linkedin-logo-bold" /></a>
-            <a href="#" aria-label="X (Twitter)" class="social-link"><Icon name="ph:x-logo-bold" /></a>
+            <a href="#" aria-label="Instagram" class="social-link">
+              <Icon name="ph:instagram-logo-bold"/>
+            </a>
+            <a href="#" aria-label="Facebook" class="social-link">
+              <Icon name="ph:facebook-logo-bold"/>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-link">
+              <Icon name="ph:linkedin-logo-bold"/>
+            </a>
+            <a href="#" aria-label="X (Twitter)" class="social-link">
+              <Icon name="ph:x-logo-bold"/>
+            </a>
           </div>
         </div>
 
@@ -27,19 +37,29 @@
         <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
           <h4 class="column-title">{{ $t('footer.contact_us') }}</h4>
           <ul class="link-list contact-list">
-            <li><Icon name="ph:map-pin-bold" /><span>Dubai, UAE</span></li>
-            <li><Icon name="ph:phone-bold" /><span>+971 (4) 123 4567</span></li>
-            <li><Icon name="ph:envelope-simple-bold" /><span>contact@dakheem.ae</span></li>
+            <li>
+              <Icon name="ph:map-pin-bold"/>
+              <span>Dubai, UAE</span></li>
+            <li>
+              <Icon name="ph:phone-bold"/>
+              <span>+971 56 284 0101</span></li>
+            <li>
+              <Icon name="ph:phone-bold"/>
+              <span>+971 50 411 3900</span></li>
+            <li>
+              <Icon name="ph:phone-bold"/>
+              <span>+998 97 025 4774</span></li>
           </ul>
         </div>
 
         <div class="footer-column" data-aos="fade-up" data-aos-delay="400">
           <h4 class="column-title">{{ $t('footer.stay_updated') }}</h4>
           <p class="description">{{ $t('footer.newsletter_desc') }}</p>
-          <form class="subscribe-form" @submit.prevent>
-            <input type="email" :placeholder="$t('footer.newsletter_placeholder')" class="subscribe-input" />
-            <BaseButton variant="primary" class="subscribe-button">{{ $t('common.subscribe') }}</BaseButton>
-          </form>
+          <div class="subscribe-form">
+            <a href="https://t.me/dakheem_bot" target="_blank" rel="noopener noreferrer">
+              <BaseButton variant="primary" class="subscribe-button">{{ $t('common.subscribe') }}</BaseButton>
+            </a>
+          </div>
         </div>
 
       </div>
@@ -54,7 +74,18 @@
     </div>
   </footer>
 </template>
+<script setup>
+import {computed} from 'vue';
 
+// Логика для динамической смены логотипа
+const colorMode = useColorMode();
+const logoSrc = computed(() => {
+  return colorMode.value === 'dark' ? '/logo-light.svg' : '/logo-dark.svg';
+});
+
+// Добавляем locale для корректной работы ссылок
+const {locale} = useI18n();
+</script>
 <style scoped>
 .footer {
   background-color: var(--placeholder);
@@ -100,6 +131,7 @@
   display: flex;
   gap: 16px;
 }
+
 .social-link {
   display: flex;
   align-items: center;
@@ -113,6 +145,7 @@
   text-decoration: none;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
+
 .social-link:hover {
   background-color: var(--primary);
   transform: translateY(-2px);
@@ -127,12 +160,14 @@
   flex-direction: column;
   gap: 12px;
 }
+
 .link-list a {
   color: var(--muted);
   text-decoration: none;
   font-size: 14px;
   transition: color 0.2s ease;
 }
+
 .link-list a:hover {
   color: var(--foreground);
 }
@@ -149,6 +184,7 @@
   flex-direction: column;
   gap: 12px;
 }
+
 .subscribe-input {
   width: 100%;
   padding: 12px;
@@ -159,6 +195,7 @@
   font-size: 14px;
   box-sizing: border-box;
 }
+
 .subscribe-button {
   width: 100%;
 }
@@ -174,17 +211,21 @@
   gap: 16px;
   font-size: 12px;
 }
+
 .copyright {
   margin: 0;
 }
+
 .legal-links {
   display: flex;
   gap: 24px;
 }
+
 .legal-links a {
   color: var(--muted);
   text-decoration: none;
 }
+
 .legal-links a:hover {
   text-decoration: underline;
 }
@@ -200,15 +241,20 @@
   .footer-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+
   .subscribe-form {
     flex-direction: row;
   }
+
   .subscribe-button {
     width: auto;
   }
+
   .footer-bottom {
     flex-direction: row;
     justify-content: space-between;
   }
 }
 </style>
+<script setup lang="ts">
+</script>

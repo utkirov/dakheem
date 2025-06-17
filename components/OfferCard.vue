@@ -1,5 +1,5 @@
 <template>
-  <a href="#cta" class="list-item">
+  <a href="#cta" @click.prevent="scrollTo('#cta')" class="list-item">
     <div class="icon-wrapper">
       <Icon :name="icon" class="icon" />
     </div>
@@ -14,6 +14,23 @@
 </template>
 
 <script setup>
+// --- НОВАЯ ЛОГИКА ДЛЯ ПЛАВНОГО СКРОЛЛА ---
+const { $lenis } = useNuxtApp();
+
+const scrollTo = (target) => {
+  if ($lenis) {
+    // Встроенная в Lenis функция для плавной прокрутки к элементу
+    $lenis.scrollTo(target, { offset: -96 }); // offset -96px, чтобы компенсировать высоту хедера
+  }
+};
+
+const handleMobileLink = (target) => {
+  isMobileMenuOpen.value = false;
+  // Небольшая задержка, чтобы меню успело закрыться перед началом скролла
+  setTimeout(() => {
+    scrollTo(target);
+  }, 300);
+};
 defineProps({
   icon: String,
   title: String,

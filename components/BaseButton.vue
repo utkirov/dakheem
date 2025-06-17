@@ -46,7 +46,7 @@ button {
 .secondary {
   background-color: transparent;
   border-color: var(--border);
-  color: var(--muted);
+  color: var(--background);
 }
 .secondary:hover {
   border-color: var(--foreground);

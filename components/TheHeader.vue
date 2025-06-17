@@ -8,14 +8,14 @@
           <Icon name="ph:list-bold" size="28"/>
         </button>
         <nav class="desktop-nav">
-          <a href="#about">{{ $t('header.about') }}</a>
-          <a href="#offers">{{ $t('header.offers') }}</a>
-          <a href="#contacts">{{ $t('header.contacts') }}</a>
+          <a href="#about" @click.prevent="scrollTo('#about')">{{ $t('header.about') }}</a>
+          <a href="#offers" @click.prevent="scrollTo('#offers')">{{ $t('header.offers') }}</a>
+          <a href="#contacts" @click.prevent="scrollTo('#contacts')">{{ $t('header.contacts') }}</a>
         </nav>
       </div>
 
       <div class="header-center">
-        <a href="#" class="logo">
+        <a href="#" @click.prevent="scrollTo('#main')" class="logo">
           <img :src="logoSrc" alt="DAKHEEM Logo" class="logo-image"/>
         </a>
       </div>
@@ -57,7 +57,7 @@
     <Transition name="mobile-menu-fade">
       <div v-if="isMobileMenuOpen" class="mobile-menu-overlay">
         <div class="mobile-menu-header">
-          <a href="#" class="logo" @click="isMobileMenuOpen = false">
+          <a href="#" @click.prevent="scrollTo('#main')" class="logo" @click="isMobileMenuOpen = false">
             <img :src="logoSrc" alt="DAKHEEM Logo" class="logo-image"/>
           </a>
           <button @click="isMobileMenuOpen = false" class="icon-button" :aria-label="$t('header.close_menu_aria')">
@@ -66,9 +66,9 @@
         </div>
         <div class="mobile-menu-content">
           <nav class="mobile-nav-links">
-            <a href="#about" @click="isMobileMenuOpen = false">{{ $t('header.about') }}</a>
-            <a href="#offers" @click="isMobileMenuOpen = false">{{ $t('header.offers') }}</a>
-            <a href="#contacts" @click="isMobileMenuOpen = false">{{ $t('header.contacts') }}</a>
+            <a href="#about" @click.prevent="scrollTo('#about')" @click="isMobileMenuOpen = false">{{ $t('header.about') }}</a>
+            <a href="#offers" @click.prevent="scrollTo('#offers')" @click="isMobileMenuOpen = false">{{ $t('header.offers') }}</a>
+            <a href="#contacts" @click.prevent="scrollTo('#contacts')" @click="isMobileMenuOpen = false">{{ $t('header.contacts') }}</a>
           </nav>
         </div>
         <div class="mobile-menu-footer">
@@ -100,6 +100,23 @@
 import {ref, computed} from 'vue';
 import {onClickOutside} from '@vueuse/core';
 
+// --- НОВАЯ ЛОГИКА ДЛЯ ПЛАВНОГО СКРОЛЛА ---
+const { $lenis } = useNuxtApp();
+
+const scrollTo = (target) => {
+  if ($lenis) {
+    // Встроенная в Lenis функция для плавной прокрутки к элементу
+    $lenis.scrollTo(target, { offset: -96 }); // offset -96px, чтобы компенсировать высоту хедера
+  }
+};
+
+const handleMobileLink = (target) => {
+  isMobileMenuOpen.value = false;
+  // Небольшая задержка, чтобы меню успело закрыться перед началом скролла
+  setTimeout(() => {
+    scrollTo(target);
+  }, 300);
+};
 // Логика для i18n
 const {locale, locales} = useI18n();
 const switchLocalePath = useSwitchLocalePath();

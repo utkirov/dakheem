@@ -14,7 +14,7 @@
 
       <div class="image-wrapper" data-aos="fade-left" data-aos-delay="300">
         <img
-            src="/1.JPG"
+            src="/about.JPG"
             alt="Luxury living in Dubai"
             class="about-image"
             :style="imageParallaxStyle"

@@ -1,5 +1,5 @@
 <template>
-  <section class="hero-section">
+  <section class="hero-section" id="main">
 
     <swiper
         @swiper="onSwiper"
@@ -26,11 +26,13 @@
             <p class="content-description">{{ $t(slide.descriptionKey) }}</p>
             <div class="content-features">
               <div v-for="feature in slide.features" :key="feature.textKey" class="feature-item">
-                <Icon :name="feature.icon"/>
+                <span class="feature-icon-s">
+                  <Icon :name="feature.icon"/>
+                </span>
                 <span v-html="$t(feature.textKey)"></span>
               </div>
             </div>
-            <a href="#cta" rel="noopener noreferrer">
+            <a href="#cta" @click.prevent="scrollTo('#cta')" rel="noopener noreferrer">
               <BaseButton variant="primary" class="content-button">{{ $t('common.read_more') }}</BaseButton>
             </a>
 
@@ -64,6 +66,23 @@
 </template>
 
 <script setup>
+// --- НОВАЯ ЛОГИКА ДЛЯ ПЛАВНОГО СКРОЛЛА ---
+const { $lenis } = useNuxtApp();
+
+const scrollTo = (target) => {
+  if ($lenis) {
+    // Встроенная в Lenis функция для плавной прокрутки к элементу
+    $lenis.scrollTo(target, { offset: -96 }); // offset -96px, чтобы компенсировать высоту хедера
+  }
+};
+
+const handleMobileLink = (target) => {
+  isMobileMenuOpen.value = false;
+  // Небольшая задержка, чтобы меню успело закрыться перед началом скролла
+  setTimeout(() => {
+    scrollTo(target);
+  }, 300);
+};
 // Скрипт остается без изменений
 import {Swiper, SwiperSlide} from 'swiper/vue';
 import {Autoplay, EffectFade} from 'swiper/modules';
@@ -75,36 +94,99 @@ const modules = [Autoplay, EffectFade];
 const slides = ref([
   {
     id: 1,
-    featuredTextKey: 'slider.wynwood_featured',
-    titleKey: 'slider.wynwood_title',
-    descriptionKey: 'slider.wynwood_desc',
-    backgroundImage: '/wynwood-bg.jpg',
-    features: [{icon: 'ph:armchair-bold', textKey: 'slider.wynwood_feat1'}, {
-      icon: 'ph:map-pin-bold',
-      textKey: 'slider.wynwood_feat2'
-    }, {icon: 'ph:waves-bold', textKey: 'slider.wynwood_feat3'},]
+    featuredTextKey: 'slider.slide1_featured',
+    titleKey: 'slider.slide1_title',
+    descriptionKey: 'slider.slide1_desc',
+    backgroundImage: '/slide-1.jpg',
+    features: [
+      { icon: 'ph:swimming-pool-bold', textKey: 'slider.slide1_feat1' },
+      { icon: 'ph:sparkle-bold', textKey: 'slider.slide1_feat2' },
+      { icon: 'ph:paint-brush-broad-bold', textKey: 'slider.slide1_feat3' },
+    ]
   },
   {
     id: 2,
-    featuredTextKey: 'slider.marina_featured',
-    titleKey: 'slider.marina_title',
-    descriptionKey: 'slider.marina_desc',
-    backgroundImage: '/marina-bg.jpg',
-    features: [{icon: 'ph:sailboat-bold', textKey: 'slider.marina_feat1'}, {
-      icon: 'ph:swimming-pool-bold',
-      textKey: 'slider.marina_feat2'
-    }, {icon: 'ph:buildings-bold', textKey: 'slider.marina_feat3'},]
+    featuredTextKey: 'slider.slide2_featured',
+    titleKey: 'slider.slide2_title',
+    descriptionKey: 'slider.slide2_desc',
+    backgroundImage: '/slide-2.jpg',
+    features: [
+      { icon: 'ph:house-line-bold', textKey: 'slider.slide2_feat1' },
+      { icon: 'ph:wine-bold', textKey: 'slider.slide2_feat2' },
+      { icon: 'ph:car-bold', textKey: 'slider.slide2_feat3' },
+    ]
   },
   {
     id: 3,
-    featuredTextKey: 'slider.palace_featured',
-    titleKey: 'slider.palace_title',
-    descriptionKey: 'slider.palace_desc',
-    backgroundImage: '/palace-bg.jpg',
-    features: [{icon: 'ph:car-bold', textKey: 'slider.palace_feat1'}, {
-      icon: 'ph:spa-bold',
-      textKey: 'slider.palace_feat2'
-    }, {icon: 'ph:bell-bold', textKey: 'slider.palace_feat3'},]
+    featuredTextKey: 'slider.slide3_featured',
+    titleKey: 'slider.slide3_title',
+    descriptionKey: 'slider.slide3_desc',
+    backgroundImage: '/slide-3.jpg',
+    features: [
+      { icon: 'ph:waves-bold', textKey: 'slider.slide3_feat1' },
+      { icon: 'ph:sailboat-bold', textKey: 'slider.slide3_feat2' },
+      { icon: 'ph:tree-evergreen-bold', textKey: 'slider.slide3_feat3' },
+    ]
+  },
+  {
+    id: 4,
+    featuredTextKey: 'slider.slide4_featured',
+    titleKey: 'slider.slide4_title',
+    descriptionKey: 'slider.slide4_desc',
+    backgroundImage: '/slide-4.jpg',
+    features: [
+      { icon: 'ph:golf-bold', textKey: 'slider.slide4_feat1' },
+      { icon: 'ph:heartbeat-bold', textKey: 'slider.slide4_feat2' },
+      { icon: 'ph:fork-knife-bold', textKey: 'slider.slide4_feat3' },
+    ]
+  },
+  {
+    id: 5,
+    featuredTextKey: 'slider.slide5_featured',
+    titleKey: 'slider.slide5_title',
+    descriptionKey: 'slider.slide5_desc',
+    backgroundImage: '/slide-5.jpg',
+    features: [
+      { icon: 'ph:car-profile-bold', textKey: 'slider.slide5_feat1' },
+      { icon: 'ph:medal-bold', textKey: 'slider.slide5_feat2' },
+      { icon: 'ph:buildings-bold', textKey: 'slider.slide5_feat3' },
+    ]
+  },
+  {
+    id: 6,
+    featuredTextKey: 'slider.slide6_featured',
+    titleKey: 'slider.slide6_title',
+    descriptionKey: 'slider.slide6_desc',
+    backgroundImage: '/slide-6.jpg',
+    features: [
+      { icon: 'ph:users-three-bold', textKey: 'slider.slide6_feat1' },
+      { icon: 'ph:flower-lotus-bold', textKey: 'slider.slide6_feat2' },
+      { icon: 'ph:tennis-ball-bold', textKey: 'slider.slide6_feat3' },
+    ]
+  },
+  {
+    id: 7,
+    featuredTextKey: 'slider.slide7_featured',
+    titleKey: 'slider.slide7_title',
+    descriptionKey: 'slider.slide7_desc',
+    backgroundImage: '/slide-7.jpg',
+    features: [
+      { icon: 'ph:storefront-bold', textKey: 'slider.slide7_feat1' },
+      { icon: 'ph:stack-bold', textKey: 'slider.slide7_feat2' },
+      { icon: 'ph:cloud-sun-bold', textKey: 'slider.slide7_feat3' },
+    ]
+  },
+  {
+    id: 8,
+    featuredTextKey: 'slider.slide8_featured',
+    titleKey: 'slider.slide8_title',
+    descriptionKey: 'slider.slide8_desc',
+    backgroundImage: '/slide-8.jpg',
+    features: [
+      { icon: 'ph:binoculars-bold', textKey: 'slider.slide8_feat1' },
+      { icon: 'ph:trophy-bold', textKey: 'slider.slide8_feat2' },
+      { icon: 'ph:diamond-bold', textKey: 'slider.slide8_feat3' },
+    ]
   }
 ]);
 const swiperInstance = ref(null);
@@ -257,7 +339,10 @@ const progressRingOffset = computed(() => CIRCUMFERENCE * (1 - autoplayProgress.
 }
 
 .feature-item :deep(i) {
-  font-size: 32px;
+  font-size: 48px;
+}
+.feature-icon-s {
+  font-size: 36px;
 }
 
 .side-toolbar {
@@ -375,5 +460,8 @@ const progressRingOffset = computed(() => CIRCUMFERENCE * (1 - autoplayProgress.
   stroke-dasharray: v-bind(CIRCUMFERENCE);
   stroke-dashoffset: v-bind(CIRCUMFERENCE);
   transition: stroke-dashoffset 0.1s linear;
+}
+.content-feature-text {
+  color: #fff !important;
 }
 </style>
