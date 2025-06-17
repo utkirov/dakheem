@@ -5,69 +5,50 @@
 
         <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
           <h3 class="logo">DAKHEEM</h3>
-          <p class="description">
-            Your key to unlocking Dubai's most exclusive real estate opportunities.
-          </p>
+          <p class="description">{{ $t('footer.description') }}</p>
           <div class="social-links">
-            <a href="#" aria-label="Instagram" class="social-link">
-              <Icon name="ph:instagram-logo-bold" />
-            </a>
-            <a href="#" aria-label="Facebook" class="social-link">
-              <Icon name="ph:facebook-logo-bold" />
-            </a>
-            <a href="#" aria-label="LinkedIn" class="social-link">
-              <Icon name="ph:linkedin-logo-bold" />
-            </a>
-            <a href="#" aria-label="X (Twitter)" class="social-link">
-              <Icon name="ph:x-logo-bold" />
-            </a>
+            <a href="#" aria-label="Instagram" class="social-link"><Icon name="ph:instagram-logo-bold" /></a>
+            <a href="#" aria-label="Facebook" class="social-link"><Icon name="ph:facebook-logo-bold" /></a>
+            <a href="#" aria-label="LinkedIn" class="social-link"><Icon name="ph:linkedin-logo-bold" /></a>
+            <a href="#" aria-label="X (Twitter)" class="social-link"><Icon name="ph:x-logo-bold" /></a>
           </div>
         </div>
 
         <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
-          <h4 class="column-title">Quick Links</h4>
+          <h4 class="column-title">{{ $t('footer.quick_links') }}</h4>
           <ul class="link-list">
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#offers">Offers</a></li>
-            <li><a href="#contacts">Location</a></li>
-            <li><a href="#">Roadshow</a></li>
+            <li><a href="#about">{{ $t('header.about') }}</a></li>
+            <li><a href="#offers">{{ $t('header.offers') }}</a></li>
+            <li><a href="#contacts">{{ $t('header.contacts') }}</a></li>
+            <li><a href="#">{{ $t('footer.link_roadshow') }}</a></li>
           </ul>
         </div>
 
         <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
-          <h4 class="column-title">Contact Us</h4>
+          <h4 class="column-title">{{ $t('footer.contact_us') }}</h4>
           <ul class="link-list contact-list">
-            <li>
-              <Icon name="ph:map-pin-bold" />
-              <span>Dubai, UAE</span>
-            </li>
-            <li>
-              <Icon name="ph:phone-bold" />
-              <span>+971 (4) 123 4567</span>
-            </li>
-            <li>
-              <Icon name="ph:envelope-simple-bold" />
-              <span>contact@dakheem.ae</span>
-            </li>
+            <li><Icon name="ph:map-pin-bold" /><span>Dubai, UAE</span></li>
+            <li><Icon name="ph:phone-bold" /><span>+971 (4) 123 4567</span></li>
+            <li><Icon name="ph:envelope-simple-bold" /><span>contact@dakheem.ae</span></li>
           </ul>
         </div>
 
         <div class="footer-column" data-aos="fade-up" data-aos-delay="400">
-          <h4 class="column-title">Stay Updated</h4>
-          <p class="description">Get the latest news and offers straight to your inbox.</p>
-          <form class="subscribe-form">
-            <input type="email" placeholder="Your email address" class="subscribe-input" />
-            <BaseButton variant="primary" class="subscribe-button">Subscribe</BaseButton>
+          <h4 class="column-title">{{ $t('footer.stay_updated') }}</h4>
+          <p class="description">{{ $t('footer.newsletter_desc') }}</p>
+          <form class="subscribe-form" @submit.prevent>
+            <input type="email" :placeholder="$t('footer.newsletter_placeholder')" class="subscribe-input" />
+            <BaseButton variant="primary" class="subscribe-button">{{ $t('common.subscribe') }}</BaseButton>
           </form>
         </div>
 
       </div>
 
       <div class="footer-bottom" data-aos="fade-up" data-aos-delay="500">
-        <p class="copyright">© {{ new Date().getFullYear() }} DAKHEEM. All Rights Reserved.</p>
+        <p class="copyright">© {{ new Date().getFullYear() }} DAKHEEM. {{ $t('footer.copyright') }}</p>
         <div class="legal-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="#">{{ $t('footer.privacy_policy') }}</a>
+          <a href="#">{{ $t('footer.terms_of_service') }}</a>
         </div>
       </div>
     </div>

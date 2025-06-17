@@ -1,64 +1,98 @@
 {
+  "common": {
+    "read_more": "Читать далее",
+    "learn_more": "Узнать больше",
+    "subscribe": "Подписаться"
+  },
   "header": {
-    "about": "О нас",
-    "offers": "Предложения",
-    "contacts": "Контакты",
-    "phone": "Позвонить",
-    "cta": "Записаться"
+    "about": "О Dakheem",
+    "offers": "Что вас ждет",
+    "contacts": "Место проведения",
+    "cta": "Участвовать"
   },
   "hero": {
-    "title": "Эксклюзивные предложения по недвижимости в Дубае от Dakheem"
+    "toolbar_enquiry": "Запрос",
+    "toolbar_call": "Звонок",
+    "toolbar_whatsapp": "WhatsApp",
+    "title": "Откройте лучшие предложения недвижимости в Дубае вместе с Dakheem Real Estate!"
+  },
+  "slider": {
+    "wynwood_featured": "Избранный объект",
+    "wynwood_title": "WYNWOOD от IMTIAZ",
+    "wynwood_desc": "Добро пожаловать в Wynwood Residence от Imtiaz, архитектурное святилище на престижных берегах Дубайских островов.",
+    "wynwood_feat1": "ПОЛНОСТЬЮ<br>МЕБЛИРОВАН",
+    "wynwood_feat2": "ПРЕСТИЖНАЯ<br>ЛОКАЦИЯ",
+    "wynwood_feat3": "5 МИНУТ<br>ДО ПЛЯЖА",
+    "marina_featured": "Новый релиз",
+    "marina_title": "MARINA VISTAS",
+    "marina_desc": "Откройте для себя новый уровень роскошной жизни с захватывающим видом на Арабский залив и панораму Дубай Марины.",
+    "marina_feat1": "ДОСТУП<br>К МАРИНЕ",
+    "marina_feat2": "ИНФИНИТИ<br>БАССЕЙН",
+    "marina_feat3": "ПАНОРАМНЫЕ<br>ВИДЫ",
+    "palace_featured": "Эксклюзивное предложение",
+    "palace_title": "PALACE RESIDENCES",
+    "palace_desc": "Современный жилой комплекс на набережной с множеством удобств и услуг для премиального образа жизни.",
+    "palace_feat1": "ПАРКОВКА<br>СЕРВИСОМ",
+    "palace_feat2": "РОСКОШНЫЙ<br>СПА",
+    "palace_feat3": "КОНСЬЕРЖ<br>24/7"
   },
   "about": {
-    "section_title": "О нас",
-    "heading": "Ваш ключ к возможностям в сфере недвижимости Дубая",
-    "text": "Являясь одним из ведущих агентств недвижимости города, мы помогаем клиентам со всего мира находить первоклассные объекты в самом сердце Дубая. На роуд-шоу Dakheem у вас будет возможность учиться, общаться и инвестировать в одни из самых престижных локаций Дубая."
+    "section_title": "О Dakheem",
+    "heading": "Dakheem — одно из ведущих агентств недвижимости, расположенных в Дубае. ",
+    "text": "Мы помогаем клиентам со всего мира находить лучшие инвестиционные возможности в самом сердце Объединённых Арабских Эмиратов, а также осуществлять покупку, продажу, аренду и размещение. Теперь и у вас есть возможность приобрести недвижимость в самых престижных районах Дубая — сердца ОАЭ! "
   },
   "offers": {
-    "section_title": "Предложения",
-    "heading": "Присоединяйтесь к роуд-шоу Dakheem, полному непревзойденных возможностей!",
-    "card1_title": "Индивидуальный подбор",
-    "card2_title": "Персональные предложения",
-    "card3_title": "Консультации экспертов",
-    "card4_title": "Стратегии покупки и продажи"
+    "section_title": "Что вас ждет на мероприятии:",
+    "heading": "Dakheem Real Estate приглашает вас на Roadshow, богатый эксклюзивными предложениями! ",
+    "card1_title": "Подробная презентация надёжных и перспективных проектов недвижимости в Дубае",
+    "card1_desc": "Мы находим объекты, которые идеально соответствуют вашим инвестиционным критериям и целям.",
+    "card2_title": "Лучшие инвестиционные возможности",
+    "card2_desc": "Получите персонализированные инвестиционные планы, разработанные нашими ведущими экспертами.",
+    "card3_title": "Бесплатные консультации с экспертами: брокерами, юристами и специалистами по ипотеке",
+    "card3_desc": "Воспользуйтесь индивидуальными консультациями с нашими лучшими специалистами по недвижимости.",
+    "card4_title": "Консультации по инвестициям и сделкам купли-продажи жилья в Дубае",
+    "card4_desc": "Изучите лучшие стратегии для навигации по текущему динамичному рынку Дубая."
   },
   "attention": {
     "section_title": "Внимание",
-    "text": "Клиенты, забронировавшие участие во время роуд-шоу, получат поездку в Дубай на двоих и ваучер на сумму 8000 дирхамов!"
+    "text": "Клиенты, забронировавшие недвижимость во время Roadshow, получат путёвку в Дубай на 2 человека и ваучер на 8000 дирхамов! ",
+    "cta_button": "Забронировать",
+    "image_alt": "Подарочная карта DAKHEEM"
   },
   "event": {
-    "section_title": "Время до события",
+    "section_title": "Время проведения",
     "days": "Дней",
     "hours": "Часов",
     "minutes": "Минут",
-    "seconds": "Секунд"
+    "seconds": "Секунд",
+    "calendar_month_year": "Июнь 2025",
+    "weekdays": {
+      "su": "Вс", "mo": "Пн", "tu": "Вт", "we": "Ср", "th": "Чт", "fr": "Пт", "sa": "Сб"
+    }
   },
   "location": {
-    "section_title": "Местоположение",
-    "heading": "Эксклюзивные предложения по недвижимости в Дубае от Dakheem"
+    "section_title": "Место проведения",
+    "heading": "Информация о месте проведения",
+    "open_in_maps": "Открыть в Google Картах",
+    "image_alt": "Вид локации",
+    "map_title": "Местоположение Hilton Tashkent City"
   },
   "footer": {
-    "heading": "Хотите первым узнавать о лучших предложениях недвижимости в Дубае?",
-    "cta": "Да, хочу!"
+    "description": "Ваш ключ к возможностям в сфере недвижимости Дубая.",
+    "quick_links": "Быстрые ссылки",
+    "link_roadshow": "Роуд-шоу",
+    "contact_us": "Связаться с нами",
+    "stay_updated": "Будьте в курсе",
+    "newsletter_desc": "Получайте последние новости и предложения прямо на ваш email.",
+    "newsletter_placeholder": "Ваш email адрес",
+    "copyright": "Все права защищены.",
+    "privacy_policy": "Политика конфиденциальности",
+    "terms_of_service": "Условия использования",
+    "heading": "Хотите первыми узнать о лучших предложениях на рынке недвижимости в Дубае? ",
+    "cta": "Да, участвую!"
   },
-  "slider": {
-    "wynwood_featured": "Tanlangan mulk",
-    "wynwood_title": "WYNWOOD IMTIAZ'dan",
-    "wynwood_desc": "Dubay orollarining nufuzli sohilida joylashgan me'moriy maskan - Imtiaz'dan Wynwood Residence'ga xush kelibsiz.",
-    "wynwood_feat1": "TO'LIQ<br>JIHOZLANGAN",
-    "wynwood_feat2": "QULAY<br>JOYLASHUV",
-    "wynwood_feat3": "5 DAQIQA<br>PLYAJGACHA",
-    "marina_featured": "Yangi taklif",
-    "marina_title": "MARINA VISTAS",
-    "marina_desc": "Arab ko'rfazi va Dubay Marina osmono'par binolarining ajoyib manzaralari bilan hashamatli hayotning yangi darajasini kashf eting.",
-    "marina_feat1": "MARINAGA<br>CHIQISH",
-    "marina_feat2": "CHEKSIZ<br>BASSEYN",
-    "marina_feat3": "PANORAMIK<br>MANZARALAR",
-    "palace_featured": "Eksklyuziv taklif",
-    "palace_title": "PALACE RESIDENCES",
-    "palace_desc": "Yuqori darajadagi turmush tarzi uchun ko'plab zamonaviy qulayliklarga ega bo'lgan qirg'oq bo'yidagi zamonaviy turar-joy binosi.",
-    "palace_feat1": "AVTO<br>TURARGOX",
-    "palace_feat2": "HASHAMATLI<br>SPA",
-    "palace_feat3": "KONSEJER<br>24/7"
+  "seo": {
+    "title": "Dakheem Real Estate | Эксклюзивная недвижимость в Дубае",
+    "description": "Откройте для себя эксклюзивные предложения по недвижимости и высокодоходные инвестиционные возможности в Дубае с Dakheem. Присоединяйтесь к нашему роуд-шоу!"
   }
 }

@@ -1,45 +1,20 @@
 {
+  "common": {
+    "read_more": "Batafsil o'qish",
+    "learn_more": "Batafsil",
+    "subscribe": "Obuna bo'lish"
+  },
   "header": {
-    "about": "Biz haqimizda",
-    "offers": "Takliflar",
-    "contacts": "Kontaktlar",
-    "phone": "Qo'ng'iroq qilish",
-    "cta": "Ro'yxatdan o'tish"
+    "about": "Dakheem haqida",
+    "offers": "Sizni nimalar kutmoqda",
+    "contacts": "Manzil",
+    "cta": "Qatnashaman"
   },
   "hero": {
-    "title": "Dakheem'dan Dubaydagi eksklyuziv ko'chmas mulk takliflari"
-  },
-  "about": {
-    "section_title": "Biz haqimizda",
-    "heading": "Dubay ko'chmas mulk imkoniyatlarini ochish uchun sizning kalitingiz",
-    "text": "Shaharning yetakchi ko'chmas mulk agentliklaridan biri sifatida biz butun dunyodagi mijozlarga Dubayning markazida joylashgan eng yaxshi mulklarni topishga yordam beramiz. Dakheem Roadshow'da siz Dubayning eng nufuzli manzillaridan birida o'rganish, aloqalar o'rnatish va sarmoya kiritish imkoniyatiga ega bo'lasiz."
-  },
-  "offers": {
-    "section_title": "Takliflar",
-    "heading": "Betakror imkoniyatlarga to'la Dakheem Roadshow'ga qo'shiling!",
-    "card1_title": "Individual tanlov",
-    "card2_title": "Shaxsiy takliflar",
-    "card3_title": "Ekspert maslahatlari",
-    "card4_title": "Sotib olish va sotish strategiyalari"
-  },
-  "attention": {
-    "section_title": "Diqqat",
-    "text": "Roadshow davomida ishtirok etishni bron qilgan mijozlar ikki kishilik Dubayga sayohat va 8000 AED qiymatidagi vaucherni qo'lga kiritadilar!"
-  },
-  "event": {
-    "section_title": "Tadbirgacha qolgan vaqt",
-    "days": "Kun",
-    "hours": "Soat",
-    "minutes": "Daqiqa",
-    "seconds": "Soniya"
-  },
-  "location": {
-    "section_title": "Joylashuv",
-    "heading": "Dakheem'dan Dubaydagi eksklyuziv ko'chmas mulk takliflari"
-  },
-  "footer": {
-    "heading": "Dubaydagi eng yaxshi ko'chmas mulk takliflari haqida birinchi bo'lib bilishni xohlaysizmi?",
-    "cta": "Ha, xohlayman!"
+    "toolbar_enquiry": "So'rov",
+    "toolbar_call": "Qo'ng'iroq",
+    "toolbar_whatsapp": "WhatsApp",
+    "title": "Dakheem Real Estate bilan Dubaydagi ko’chmas mulk xazinalarini yangidan kashf eting!"
   },
   "slider": {
     "wynwood_featured": "Tanlangan mulk",
@@ -60,5 +35,64 @@
     "palace_feat1": "AVTO<br>TURARGOX",
     "palace_feat2": "HASHAMATLI<br>SPA",
     "palace_feat3": "KONSEJER<br>24/7"
+  },
+  "about": {
+    "section_title": "Dakheem haqida",
+    "heading": "Dakheem – Dubayda joylashgan yetakchi ko’chmas mulk agentliklaridan biri. ",
+    "text": "Dunyo bo’ylab mijozlarga Birlashgan Arab Amirliklarining markazida eng yaxshi investitsion imkoniyatlarni topishdan tortib, uy-joy xarid qilish, sotish, ijara va joylashuv masalalarida yordam ko’rsatib kelmoqda. Endi esa sizda ham BAA’ning yuragi – Dubayning eng muhim nuqtalaridan ko’chmas mulkka ega bo’lish imkoni bor! "
+  },
+  "offers": {
+    "section_title": "Tadbirda sizni nimalar kutmoqda:",
+    "heading": "Dakheem Real Estate sizni premium takliflarga boy Roadshow tadbiriga taklif qiladi! ",
+    "card1_title": "Dubaydagi ishonchli va istiqbolli ko’chmas mulk loyihalarining batafsil taqdimoti",
+    "card1_desc": "Sizning investitsion mezonlaringiz va maqsadlaringizga to'liq mos keladigan mulklarni topamiz.",
+    "card2_title": "Investitsiya uchun eng yaxshi imkoniyatlar",
+    "card2_desc": "Bizning yetakchi mutaxassislarimiz tomonidan ishlab chiqilgan shaxsiy sarmoyaviy rejalarni oling.",
+    "card3_title": "Brokerlar, huquqshunoslar va ipoteka mutaxassislaridan bepul maslahatlar",
+    "card3_desc": "Ko'chmas mulk bo'yicha eng yaxshi maslahatchilarimiz bilan yakkama-yakka maslahatlardan foydalaning.",
+    "card4_title": "Investitsiyalar va Dubayda uy-joy oldi-sotdisi bo’yicha konsultatsiya",
+    "card4_desc": "Dubayning joriy dinamik bozorida harakat qilish uchun eng yaxshi strategiyalarni o'rganing."
+  },
+  "attention": {
+    "section_title": "Diqqat",
+    "text": "Roadshow davomida uy bron qilgan mijozlarimizga Dakheem Real Estate tomonidan Dubayga 2 kishilik yo’llanma hamda 8000 dirham qiymatidagi vaucher sovg’a qilinadi! ",
+    "cta_button": "Bron qilish",
+    "image_alt": "DAKHEEM Sovg'a kartasi"
+  },
+  "event": {
+    "section_title": "O’tkazilish vaqti",
+    "days": "Kun",
+    "hours": "Soat",
+    "minutes": "Daqiqa",
+    "seconds": "Soniya",
+    "calendar_month_year": "Iyun 2025",
+    "weekdays": {
+      "su": "Ya", "mo": "Du", "tu": "Se", "we": "Ch", "th": "Pa", "fr": "Ju", "sa": "Sh"
+    }
+  },
+  "location": {
+    "section_title": "Roadshow manzili",
+    "heading": "Tadbir o'tkaziladigan joy haqida ma'lumot",
+    "open_in_maps": "Google Xaritalarda ochish",
+    "image_alt": "Joylashuv ko'rinishi",
+    "map_title": "Hilton Tashkent City joylashuvi"
+  },
+  "footer": {
+    "description": "Dubay ko'chmas mulk imkoniyatlarini ochish uchun sizning kalitingiz.",
+    "quick_links": "Tezkor havolalar",
+    "link_roadshow": "Roadshow",
+    "contact_us": "Biz bilan bog'lanish",
+    "stay_updated": "Yangiliklardan xabardor bo'ling",
+    "newsletter_desc": "Eng so'nggi yangiliklar va takliflarni to'g'ridan-to'g'ri elektron pochtangizga oling.",
+    "newsletter_placeholder": "Sizning email manzilingiz",
+    "copyright": "Barcha huquqlar himoyalangan.",
+    "privacy_policy": "Maxfiylik siyosati",
+    "terms_of_service": "Foydalanish shartlari",
+    "heading": "Roadshow’da investitsiya va ko’chmas mulk xaridi uchun eng yaxshi imkoniyatlarni kashf qilishga tayyormisiz? ",
+    "cta": "Ha, qatnashaman!"
+  },
+  "seo": {
+    "title": "Dakheem Real Estate | Dubaydagi eksklyuziv ko'chmas mulk",
+    "description": "Dakheem bilan Dubaydagi eksklyuziv ko'chmas mulk takliflari va yuqori daromadli investitsiya imkoniyatlarini kashf eting. Bizning roadshow tadbirimizga qo'shiling!"
   }
 }

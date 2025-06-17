@@ -1,5 +1,5 @@
 <template>
-  <a href="#" class="list-item">
+  <a href="#cta" class="list-item">
     <div class="icon-wrapper">
       <Icon :name="icon" class="icon" />
     </div>

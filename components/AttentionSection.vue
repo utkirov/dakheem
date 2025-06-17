@@ -8,9 +8,11 @@
           {{ $t('attention.text') }}
         </p>
         <div data-aos="fade-up" data-aos-delay="300">
-          <BaseButton variant="primary" class="cta-button">
-            {{ $t('attention.cta_button') }}
-          </BaseButton>
+          <a href="https://t.me/dakheem_bot" target="_blank" rel="noopener noreferrer">
+            <BaseButton variant="primary" class="cta-button">
+              {{ $t('attention.cta_button') }}
+            </BaseButton>
+          </a>
         </div>
       </div>
 
